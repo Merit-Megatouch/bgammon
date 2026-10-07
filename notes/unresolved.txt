@@ -1,0 +1,44 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+NVRAMData | bgammon.so
+ClearPreSmack() | bgammon.so
+_strrev(char*) | bgammon.so
+CommaStr(char*, unsigned long) | bgammon.so
+VideoClass::OpenScrapVB() | bgammon.so
+VideoClass::ShowVBRegion(int, int, int, int, int, int) | bgammon.so
+VideoClass::CopyFromScreen(int, int, int, int, int, int, bool) | bgammon.so
+VideoClass::Rect(int, int, int, int) | bgammon.so
+VideoClass::GetVB() | bgammon.so
+VideoClass::OpenVB(int) | bgammon.so
+VideoClass::SetRGB(short, short, short) | bgammon.so
+VideoClass::ShowVB(int) | bgammon.so
+VideoClass::CloseVB() | bgammon.so
+SystemClass::CheckKey() | bgammon.so
+MouseManager::RemoveZone(char*) | bgammon.so
+MouseManager::AddZone(char*, int, int, int, int) | bgammon.so
+MouseManager::CheckLoc(unsigned char, bool) | bgammon.so
+MouseManager::RemoveAll(unsigned char) | bgammon.so
+MegacGraphics::GetInstance() | bgammon.so
+HighScoresManager::AbortGame() | bgammon.so
+UniversalTranslator::SetupTransSys(char const*, unsigned char, Locale::Languages) | bgammon.so
+UniversalTranslator::ReleaseTransSys() | bgammon.so
+UniversalTranslator::nTrans(char*, char const*, int, bool) | bgammon.so
+UniversalTranslator::UniversalTranslator() | bgammon.so
+UniversalTranslator::~UniversalTranslator() | bgammon.so
+Bitmap::LoadTGA_32(char*) | bgammon.so
+Bitmap::CopyToBitmap(Bitmap*, int, int, int, int, int, int) | bgammon.so
+Bitmap::DisplayRegion(int, int, int, int, int, int, int) | bgammon.so
+Bitmap::CopyFromCurrent(int, int) | bgammon.so
+Bitmap::LoadCompressedData(char*, _IO_FILE*) | bgammon.so
+Bitmap::SmackAnimationLoad(char*, unsigned char) | bgammon.so
+Bitmap::SmackAnimationJumpTo(int) | bgammon.so
+Bitmap::SmackAnimationRewind() | bgammon.so
+Bitmap::SmackAnimationDisplay(int, int, unsigned char) | bgammon.so
+Bitmap::CreateColoredSmackTextBox(char const*, FontBase*, signed char, unsigned short, unsigned short, short, short, short, unsigned char, bool) | bgammon.so
+Bitmap::Display(int, int, int) | bgammon.so
+Bitmap::LoadData(char*, unsigned char, int) | bgammon.so
+Bitmap::Bitmap(int, int, unsigned char, unsigned char) | bgammon.so
+BmpFont::BmpFont(short, short, unsigned short) | bgammon.so
+NVRAMMap::GamesOpt(xml_gameoptions::GameOptionIndex) const | bgammon.so
